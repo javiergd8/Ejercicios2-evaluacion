@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Cosmética Profesional</h1>
+
+    <fieldset>
+        <legend>Formulario pedido</legend>
+
+        <h2>Identificación</h2>
+
+        <fieldset>
+            <legend>Datos del cliente</legend>
+            <p>Correo electronico: <input type="text"></p>
+            <p>Nombre: <input type="text"></p>
+            <p class="i">Longitud mínima 0 caracteres</p>
+            <p>Direccón de envío: <input type="text"></p>
+        </fieldset>
+
+        <fieldset>
+            
+            <legend>Tipo de Cliente</legend>
+                <p>
+                    <input type="radio" id="particular" name= "particular" value="particular">
+                    <label for="particular">Particular</label><br>
+                    <input type="radio" id="empresa" name= "empresa" value="empresa">
+                    <label for="empresa">Empresa</label>
+                </p>
+        </fieldset>
+
+        <h2>Datos del Pedido</h2>
+
+        <fieldset>
+            <legend>Datos del producto</legend>
+                <select name="productos" id="productos" multiple="si" size="5">
+                    <optgroup label="Solares">
+                        <option value="sol-01" selected="selected">Sol-01 Solar Indice 8</option>
+                        <option value="sol-02">Sol-02 Solar Indice 15</option>
+                        <option value="sol-03">Sol-03 Solar Indice 50</option>
+                    </optgroup>
+                    <optgroup label="Labiales">
+                        <option value="lab-01" selected="selected">Lab-01 Gloss Red</option>
+                        <option value="lab-02">Lab-02 Gloss Brown</option>
+                    </optgroup>
+                </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Observaciones</legend>
+                <textarea name="observaciones" cols="50" rows="5" placeholder="Escribe aqui sus observaciones"></textarea>
+                <br>
+                <input type="checkbox" id="wifi" name= "wifi" value="wifi">
+                <label for="wifi">Deseo recibir información sobre ofertas y novedades</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos bancarios</legend>
+                <p>Número de targeta: <input type="text">
+                Fecha caducidad: <input type="text"></p>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Borrar formulario">
+    </fieldset>
+    
+</body>
+</html>

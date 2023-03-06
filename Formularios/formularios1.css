@@ -1,0 +1,20 @@
+h1{
+    color: brown;
+}
+form{
+    border: 2px solid;
+    border-color: brown;
+    padding: 10px;
+
+}
+h3{
+    color: brown;
+}
+body{
+    background-color: antiquewhite;
+}
+input[type=submit], input[type=reset]{
+    background-color: brown;
+    color: white;
+    border: 1px solid grey;
+}
